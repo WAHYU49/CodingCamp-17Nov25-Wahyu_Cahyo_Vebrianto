@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WAHYU CAHYO VEBRIANTO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="images/Foto.jpeg" alt="Logo Website" width="100" class="circle-image">
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="#message">Message Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <h1>Hi <span id="namePlace">WAHYU</span>, Welcome To Website</h1>
+        <p class="muted">Wahyu Cahyo Vebrianto</p>
+
+        <div class="name-set">
+          <input id="visitorName" type="text" placeholder="Masukkan nama...">
+          <button id="setNameBtn" class="btn">Kirim</button>
+        </div>
+      </div>
+
+     
+    </div>
+  </section>
+
+  <!-- Our Headquarter -->
+  <section class="container headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="hq-grid">
+      <div class="hq-item">
+        <div class="hq-circle">
+            <img src="images/jakarta.jpeg" alt="Logo Website" width="100" class="circle-image">
+        </div>
+
+        <p>Jakarta</p>
+      </div>
+      <div class="hq-item">
+        <div class="hq-circle">
+            <img src="images/bandung.jpeg" alt="Logo Website" width="100" class="circle-image">
+        </div>
+        <p>Bandung</p>
+      </div>
+      <div class="hq-item">
+        <div class="hq-circle">
+            <img src="images/surabaya.jpeg" alt="Logo Website" width="100" class="circle-image">
+        </div>
+        <p>Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us (two-column as mockup) -->
+  <section id="message" class="container message-section">
+    <h2>Message Us</h2>
+    <div class="message-grid">
+      <!-- LEFT: FORM -->
+      <div class="card form-card">
+        <form id="contactForm" novalidate>
+          <label for="fullname">Nama</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Nama lengkap" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="email@domain.com" required>
+
+          <label for="role">Peran</label>
+          <select id="role" name="role">
+            <option value="Customer">Customer</option>
+            <option value="Partner">Partner</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Submit</button>
+            <button type="button" id="clearBtn" class="btn secondary">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: RESULT CARD -->
+      <div class="card result-card" aria-live="polite">
+        <h3>Current Result</h3>
+        <div class="result-row"><strong>Time:</strong> <span id="currentTime">-</span></div>
+        <div class="result-row"><strong>Name:</strong> <span id="resName">-</span></div>
+        <div class="result-row"><strong>Email:</strong> <span id="resEmail">-</span></div>
+        <div class="result-row"><strong>Role:</strong> <span id="resRole">-</span></div>
+        <div class="result-row"><strong>Message:</strong>
+          <div id="resMessage" class="res-message">-</div>
+        </div>
+
+        <div class="result-notes muted">
+          <p>Data akan diperbarui setiap kali form disubmit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Content By. Wahyu Cahyo Vebrianto</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
